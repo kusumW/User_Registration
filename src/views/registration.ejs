@@ -1,0 +1,58 @@
+
+<html>       
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<body>
+<div class="common">
+<div class="wrapper"> 
+    <form class="form-signin" name="myform" >  
+        <h3 class="form-signin-heading">Welcome! Please Register</h3>
+
+        <div class="form-control">
+             <label> Firstname </label>         
+                <input type="text" name="firstname" id="name" size="15" required /> 
+                <!-- <span id="name"></span>  -->
+        </div> 
+        <div class="form-control">
+            <label> Lastname: </label>         
+                 <input type="text" name="lastname" size="15" required/>  
+        </div>
+        <div class="form-control">
+        <label> Department:</label>   
+            <select> 
+
+                <option value="Admin">Admin</option>  
+                <option value="HR">HR</option>  
+                <option value="Accountant">Accountant</option>  
+                <option value="Software Devloper">Software Devloper</option> 
+            </select>  
+            </div>
+<div class="form-control">
+<label> Gender :</label> 
+<fieldset id="radio button">
+<input type="radio" name="gender" > Male   
+<input type="radio" name="gender"/> Female
+<input type="radio" name="gender"/> Other  
+</fieldset>
+</div>
+
+<div class="form-control">
+<label> Email:  </label>
+<input type="email" id="email" name="email" required/> 
+</div>
+
+<div class="form-control">
+<label>Password:</label>  
+<input type="Password" id="pass" name="pass" id ="pass" minlength="6" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}$"  required/>   
+<span id="pass"></span> 
+</div>  
+<button type="submit"  onclick="validate()" action="#" class="registerbtn"> Submit</button>
+</div> 
+</div>
+</form>  
+
+
+
+</body> 
+
+
+</html>
